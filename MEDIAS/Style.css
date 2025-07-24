@@ -1,0 +1,348 @@
+/* Reset & global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0a0a23;
+    color: #fff;
+    line-height: 1.6;
+     
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #10102e;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.logo .highlight {
+    color: #FF007F;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF007F;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0.7);
+    object-fit: cover;
+    z-index: -1;/*place la video derriere le contenu */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+   background: transparent;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #FF007F;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e60073;
+}
+
+.films {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+.films h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.films-grid {
+    display: flex;
+    
+    gap: 30px; /*ESPACE ENTRE LES CARTE DES PHOTOS*/ 
+    justify-content: center;
+    margin: 0 , auto;
+    max-width: 1200px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.films-card {
+    background-color: #0B1D3A;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease ;
+    overflow: hidden;
+}
+.films-card:hover{
+    transform: scaleY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+
+}
+.films-card:hover img{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+.films-card:hover .overlay{
+    opacity: 1;
+    
+
+    }
+    .films-section{
+        background-color: #0a0a23;
+        width: 100%;
+        padding: 60px 0;
+        margin: 0;
+    }
+.films-card img {
+    width: 100%;
+    display: block;
+    
+}
+.films-Titre{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.films-Date{
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.films-card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.films-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #10102e;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  color: #ccc;
+}
+
+.Avantage-de-teranga-cinema {
+  background-color: #d6f3fab4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Avantages-de-teranga-cinema h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #e91e63;
+  text-align: center;
+  font-weight: bold;
+}
+.films h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cartes-avantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carte {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    height: 320px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  
+}
+
+
+.carte h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.carte p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.films-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, rgba(255,192,203,0.4), rgba(216,191,216,0.4));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #ff69b4;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+/*pour un titre style cinema */
+h1,h2,h3 {
+    font-family: 'cinel Decorative ',serif ;
+}
+/* pour les sous titres romantiques */
+.film-date {
+    font-family: 'great vibes',cursive;
+    font-size: 22px;
+    color: #ffb6c1;
+}
+body , p {
+    font-family: 'poppins',sans-serif;
+}
+.films h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 18px;
+    color: #8a2be2;
+    margin: 0;
+}
+
+.films h2 {
+    
+    font-size: 20px;
+    color: black;
+    margin: 5px  0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+     font-family: 'Georgia', 'Times New Roman',  serif;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.films {
+    padding: 10px;
+    background-color:  #ff69c62a;
+}
+.testimonials, .thanks, .collaboration {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #0f1b2a;
+  color: white;
+}
+
+.testimonials h2,
+.thanks h2,
+.collaboration h2 {
+  font-size: 2em;
+  color: #ff69b4; /* rose ciné chic */
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #1c2e4a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1em;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.thanks p, .collaboration p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+  color: #ddd;
+}
