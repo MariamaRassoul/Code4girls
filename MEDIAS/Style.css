@@ -107,7 +107,6 @@ nav a:hover {
 
 .films-grid {
     display: flex;
-    
     gap: 30px; /*ESPACE ENTRE LES CARTE DES PHOTOS*/ 
     justify-content: center;
     margin: 0 , auto;
@@ -117,6 +116,10 @@ nav a:hover {
     
     
 }
+.films-grid>.films-card>img{
+    width: 300px;
+    height: 400px; /*pour le cadre des photos de films*/
+}
 
 .films-card {
     background-color: #0B1D3A;
@@ -125,7 +128,6 @@ nav a:hover {
     text-align: center;
     position: relative;
     width: 300px;
-    
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     transition: transform 0.3s ease ;
     overflow: hidden;
@@ -344,5 +346,5 @@ body , p {
   margin: auto;
   font-size: 1.1em;
   font-family: 'Poppins', sans-serif;
-  color: #ddd;
+color: #ddd;
 }
