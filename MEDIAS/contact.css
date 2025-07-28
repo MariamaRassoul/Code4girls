@@ -67,9 +67,12 @@ justify-content: center;
 }
 
 .infos-lieu li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  gap: 20px;
+  font-size: 1.1rem;
+ margin: 10px 0;
+}
+.infos-lieu i {
+  color: #e63946;
+  margin-right: 10px;
 }
 body{
     background-color: #0c0c34;
