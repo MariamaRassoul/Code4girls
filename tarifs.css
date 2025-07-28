@@ -1,0 +1,149 @@
+/* Styles généraux */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220%;
+  text-align: center;
+}
+
+.titre {
+  font-size: 4em;
+  color: white;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px black;
+  background-color: #0077b6;
+
+}
+
+/* Grille des tarifs */
+.tarifs {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.categorie {
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+ 
+}
+
+.categorie:hover {
+  transform: translateY(-10px);
+  background-color: #0077b6;
+}
+
+.categorie h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.categorie p {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Couleurs spécifiques */
+.adulte {
+  background-color: #0077b6;
+}
+
+.adulte:hover {
+  background-color: #0096c7;
+}
+
+.adulte-reduit {
+  background-color:#f97316;
+  color: rgb#f97316;
+}
+
+.adulte-reduit:hover {
+  background-color: #f97316;
+}
+
+.etudiant {
+  background-color:#0096c7 ;
+}
+etudiant:hover {
+  background-color: #0096c7;
+}
+.enfant {
+  background-color: #f97316;
+}
+.enfant:hover {
+  background-color:#f97316;
+}
+
+
+/* Bouton réserver */
+.reserver {
+  margin-top: 40px;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #38bdf8;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.reserver:hover {
+  background-color: #0ea5e9;
+  transform: scale(2.05);
+}
+.logo {
+display: flex;
+gap: 30px;
+justify-content: center;
+
+}
+img{
+  border-radius: 70%;
+}
+.Paiement {
+min-height: 25vh;
+letter-spacing: 2px;
+font-size: 1.5em;
+ padding-top: 25px;
+}
+
+
+
+/* Section Informations de réservation */
+
+.reservation-info {
+
+    background-color: rgba(235, 233, 233, 0.973);
+     margin-top: 100px;
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    text-align: center;
+    color:black;
+ font-size: large;
+ 
+}
+
